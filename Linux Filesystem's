@@ -16,3 +16,7 @@ Modify: 2016-07-24 05:58:07.513743979 +0000
 Change: 2016-07-24 05:58:07.517743864 +0000
  Birth: -
 
+finding the file from inode number 
+
+find . -inum 408225  -print
+
