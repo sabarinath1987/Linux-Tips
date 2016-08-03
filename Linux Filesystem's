@@ -1,0 +1,18 @@
+1.How to find the default block size of the partition
+# tune2fs -l /dev/xvda1 | grep Block
+Block count:              52426119
+Block size:               4096
+Blocks per group:         32768
+
+2. How to find the Inode infomation of the file
+#stat <filename>
+root@ip-10-166-201-105:~# stat /etc/passwd
+  File: ‘/etc/passwd’
+  Size: 3203            Blocks: 8          IO Block: 4096   regular file
+Device: ca01h/51713d    Inode: 408225      Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2016-08-02 06:00:01.607322452 +0000
+Modify: 2016-07-24 05:58:07.513743979 +0000
+Change: 2016-07-24 05:58:07.517743864 +0000
+ Birth: -
+
